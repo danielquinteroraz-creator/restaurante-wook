@@ -53,7 +53,7 @@ img { width: 100%; object-fit: cover; }
 .hero { min-height: 100vh; min-height: 100svh; position: relative; display: grid; align-items: center; isolation: isolate; padding-block: calc(var(--header) + 2rem) 6rem; background: var(--ink); }
 .hero-image, .hero::after { position: absolute; inset: 0; width: 100%; height: 100%; z-index: -2; }
 .hero-image { object-position: 65% center; }
-.hero::after { content: ""; z-index: -1; background: linear-gradient(90deg, rgba(10,9,11,.92), rgba(10,9,11,.70) 35%, rgba(10,9,11,.18) 100%); }
+.hero::after { content: ""; z-index: -1; background: linear-gradient(90deg, rgba(10,9,11,.92), rgba(10,9,11,.76) 42%, rgba(10,9,11,.46) 78%, rgba(10,9,11,.18) 100%); }
 .hero h1 { font-size: clamp(3.4rem, 8.6vw, 8.2rem); }
 .hero em { font-weight: 400; color: var(--gold-soft); }
 .hero .lede { color: var(--ivory); }
@@ -68,6 +68,7 @@ img { width: 100%; object-fit: cover; }
 .cards h3, .cards p { margin: .85rem 1rem; }
 .split { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: center; gap: clamp(1.5rem, 7vw, 7rem); }
 .split img { aspect-ratio: 1.22; object-position: center 38%; }
+.split .kitchen-image { object-position: center 75%; }
 .reverse .split img { order: 1; }
 .split .text-link, .split .button { margin-top: .65rem; }
 .hours { margin: 0 0 1.5rem; }
@@ -167,7 +168,7 @@ footer h2 { color: var(--gold-soft); margin-bottom: .75rem; }
 @media (max-width: 510px) {
   .cards, .menu-grid { grid-template-columns: minmax(0, 1fr); }
   .cards img { aspect-ratio: 1.65; }
-  .hero::after { background: rgba(10,9,11,.60); }
+  .hero::after { background: rgba(10,9,11,.68); }
   .tasting { align-items: flex-start; flex-direction: column; }
   .tasting-price { text-align: left; }
   .footer-grid { grid-template-columns: 1fr; }
