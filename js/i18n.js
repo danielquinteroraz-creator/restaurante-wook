@@ -1,6 +1,6 @@
 (() => {
   const supported = ['es', 'en'];
-  let locale = 'es';
+  let locale = 'en';
   try {
     const remembered = localStorage.getItem('wook-language');
     if (supported.includes(remembered)) locale = remembered;
